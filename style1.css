@@ -1,0 +1,42 @@
+body{
+    font-family: monospace;
+    font-size: 25px;
+    width: 100%;
+    display: inline;
+    background-color: rgb(1, 1, 36);
+    color: beige;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-set{
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 20px auto;
+    width: 250px;
+    padding: 50px;
+    border: 1px dashed;
+}
+label{
+    color: rgb(1, 1, 36);
+}
+input{
+    width: 250px;
+    height: 25px;
+    border:1px solid rgb(1, 1, 36);
+}
+.button-submit{
+    background-color: rgb(1, 1, 36);
+    color: beige;
+    border: 1px solid beige;
+    position: absolute;
+    margin:  80px;
+    width: 100px;
+    height: 30px;
+}
+.button-submit:hover{
+    background-color: beige;
+    color: rgb(1, 1, 36);
+}

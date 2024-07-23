@@ -1,0 +1,192 @@
+:root{
+    --bg: #17153b;
+    --nav: #2e236c;
+    --pur: #433d8b;
+    --pi: #c8acd6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--pi);
+}
+
+/* navbar formatting start */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: var(--nav);
+    border-bottom: 1px solid var(--pi);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar-logo h1{
+    font-size: 30px;
+    font-style: italic;
+    cursor: default;
+}
+.nav-bar li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-bar li a{
+    color: var(--pi);
+}
+.nav-bar li a::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid white;
+    transform: scaleX(0);
+}
+
+.nav-bar li a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+.nav-bar li a:hover::after{
+    transform: scaleX(0.5);
+    transition: 0.5s;
+}
+
+/* navbar formatting end */
+
+/* section about formatting start*/
+
+#welcome-section h1{
+    font-size: 65px;
+    font-weight: 700;
+    color: var(pi);
+    padding: 300px;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+#welcome-section h1 span{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* section about formatting end */
+
+/* section project formatting start */
+
+
+#project{
+    margin-top: 10px;
+    padding-top: 100px;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    left: 0;
+    right: 0;
+}
+#project h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.cont .project-tile{
+    border: 1px dashed var(--pur);
+    padding: 200px 150px;
+    margin: 10px;
+}
+
+.cont a{
+    color: var(--pi);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.cont a:hover{
+    border: 1px solid var(--pur);
+    background-color: rgba(255, 189, 246, 0.1);
+}
+
+/* section project formatting end */
+
+/* section contact formatting start */
+
+#profile{
+    text-align: center;
+    padding: 200px;
+}
+#profile h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+#profile p{
+    font-size: 20px;
+}
+#profile li{
+    display: inline-block;
+    padding: 30px 50px;
+}
+#profile li a{
+    color: var(--pi);
+}
+
+
+/* section contact formatting end */
+
+/* formatting for responsive web */
+
+@media only screen and (min-width:250px) and (max-width:768px){
+    #navbar{
+        padding: 5px 5%;
+    }
+    .navbar-logo h1{
+        font-size: 20px;
+    }
+
+    .nav-bar li a{
+        font-size: 15px;
+    }
+
+    #welcome-section h1{
+        font-size: 30px;
+        padding: 150px 100px;
+    }
+
+    .cont{
+        flex-direction: column;
+    }
+
+    #profile{
+        padding: 50px;
+    }
+    #profile h2{
+        font-size: 20px;
+    }
+
+    #profile p{
+        font-size: 10px;
+    }
+
+    #profile li{
+        padding: 20px 10px;
+        font-size: 15px;
+    }
+}

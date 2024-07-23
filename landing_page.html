@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="landing-page.css">
+</head>
+<body>
+    <header id="header">
+
+        <!--logo -->
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/golden-crown-classic-decorative-icon_18591-82025.jpg?t=st=1720325552~exp=1720329152~hmac=f670712e311acdb09ffca16cb987445325e7fd8f6451ef49168955b7389e629e&w=740" alt="" id="header-img">
+            <h1>CORONA CLOTHES</h1>
+        </div>
+        
+        <!-- navigation -->
+        <nav id="nav-bar">
+            
+            <li><a href="#header" class="nav-link">ABOUT PRODUCT</a></li>
+            <li><a href="#collection" class="nav-link">OUR COLLECTION</a></li>
+            <li><a href="#account" class="nav-link">CONTACT US</a></li>
+            </nav>
+    </header>
+
+    <!-- description product -->
+    <div class="cont">
+
+        <img src="desc2.jpg" alt="" class="desc_img">
+        <div class="desc">
+            <p class="p1">Let's find your style!</p>
+            <p class="p2">connect with us to find a variety of styles that might suit you</p>
+            <a href="#account" class="button">CONNECT</a>
+        </div>
+        <video></video>
+        
+    </div>
+    <iframe width="653" height="480" id="collection" src="https://www.youtube.com/embed/UGPQlAsXuZY" 
+        title="CHANEL Fall-Winter 2024/25 Haute Couture Show — CHANEL Shows" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- register account form -->
+    <div id="account">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            
+            <table>
+                <h2>Register</h2>
+                <p>Please fill this form to make your account</p>
+                <hr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="your_account@gmail.com" required></td>
+                </tr><br>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" id="name" placeholder="your name" required></td>
+                </tr><br>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" name="pass" id="pass" placeholder="enter your password" required></td>
+                </tr><br>
+                <tr>
+                    <td colspan="2"><input type="submit" value="submit" id="submit" name="submit"></td>
+                </tr>
+                
+            </table>
+            
+        </form>
+    </div>
+
+
+    <div class="contact">
+            <p class="ket">
+                &copy; 2024 Veisha Risna Rizqyka
+            </p>
+    </div>
+    
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("header");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+</body>
+</html>

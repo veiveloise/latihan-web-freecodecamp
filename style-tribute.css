@@ -1,0 +1,33 @@
+body{
+    width: 100%;
+    font-family:monospace;
+    background-color: rgb(230, 230, 228);
+}
+#title{
+    background-color: rgb(245, 241, 241);
+    text-align: center;
+    line-height: 10px;
+    padding: 20px;
+}
+
+#image{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+}
+div{
+    margin: 20px 0;
+}
+#tribute-info{
+    background-color:  rgb(230, 230, 228);
+    line-height: 30px;
+    height: 100%;
+    margin: 0 20%;
+    padding: 20px;
+}
+
+#tribute-link{
+    text-decoration: none;
+    font-weight:bolder;
+}
